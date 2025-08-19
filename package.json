@@ -36,13 +36,12 @@
         "vite": "6.3.2",
         "wrangler": "^4.25.0"
     },
-    "scripts": {
-        "build": "tsc -b && vite build",
-        "cf-typegen": "wrangler types",
-        "check": "tsc && vite build && wrangler deploy --dry-run",
-        "dev": "vite",
-        "lint": "eslint .",
-
+     "scripts": {
+      "dev": "vite",
+     "build": "vite build",
+     "preview": "vite preview",
+     "deploy": "gh-pages -d dist"
+  }
         "preview": "vite preview"
     }
 }
